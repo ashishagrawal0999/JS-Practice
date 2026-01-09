@@ -44,8 +44,9 @@ console.log(newElement2.getAttribute("class"));
 
 console.log(newElement2.setAttribute("hello","Heyyy"));
 
-// creating list item 
 
+
+// creating list item 
 
 const list = document.createElement("li");
 list.textContent = "Milk"
@@ -59,9 +60,10 @@ list3.textContent = "Halwa";
 const list4 = document.createElement("li");
 list4.textContent = "Paneer";
 
-// Note : when an element is already present 
-
-// const unorderedElement = document.createElement("ul");
+// Note : when an element is already present in html
+// Here the element is ul & we are creating list items for the ul 
+// listing is the id of ul 
+// after that we are inserting the list items in the ul 
 
 const unorderedElement = document.getElementById("listing");
 
@@ -81,7 +83,8 @@ unorderedElement.prepend(list3,list4);
 
 // console.log(unorderedElement);
 
-// dir ke andar child check krna ho toh immediate parent ko select krna hoga console.log me jaise body ke andar child hai toh document.body
+// dir ke andar child check krna ho toh immediate parent ko select krna hoga console.log me 
+// jaise body ke andar child hai toh console.log()
 
 // Inserting element at a particular position -> using after , before
 
